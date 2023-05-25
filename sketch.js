@@ -188,15 +188,17 @@ function drawCompass() {
 
 let sensorValueDisplayFn;
 
-/*
+
 const sensorNames = {
+
+  /*
   // from DeviceMotion
   acceleration: ['x', 'y', 'z'],
   accelerationIncludingGravity: ['x', 'y', 'z'],
   rotationRate: ['alpha', 'beta', 'gamma'],
   // interval: Number,
   // interval: n => (1 / n).toFixed() + ' Hz';
-
+*/
   // from DeviceOrientation
   orientation: [
     'alpha', 'beta', 'gamma',
@@ -237,7 +239,7 @@ function createSensorValueDisplay() {
   sensorValueDisplayFn = createDisplay(sensorNames);
   labelBottom = y;
 }
- */
+ 
 function displaySensorValues(data) {
   sensorValueDisplayFn(data);
 }
