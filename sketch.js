@@ -177,7 +177,7 @@ function drawCompass() {
     const c = p5.Vector.fromAngle(radians(northHeading + 90 * i), 55);
     fill(i ? 160 : color(192, 64, 64));
     textStyle(i ? NORMAL : BOLD);
-    text("北东南西".charAt(i), c.x, c.y);
+    text("North".charAt(i), c.x, c.y);
   }
   pop();
 }
