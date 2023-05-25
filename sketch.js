@@ -177,7 +177,7 @@ function drawCompass() {
     const c = p5.Vector.fromAngle(radians(northHeading + 90 * i), 55);
     fill(i ? 160 : color(192, 64, 64));
     textStyle(i ? NORMAL : BOLD);
-    text("North".charAt(i), c.x, c.y);
+    text("NESW".charAt(i), c.x, c.y);
   }
   pop();
 }
@@ -188,6 +188,7 @@ function drawCompass() {
 
 let sensorValueDisplayFn;
 
+/*
 const sensorNames = {
   // from DeviceMotion
   acceleration: ['x', 'y', 'z'],
@@ -236,7 +237,7 @@ function createSensorValueDisplay() {
   sensorValueDisplayFn = createDisplay(sensorNames);
   labelBottom = y;
 }
-
+ */
 function displaySensorValues(data) {
   sensorValueDisplayFn(data);
 }
